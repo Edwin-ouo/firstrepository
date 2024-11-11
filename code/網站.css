@@ -1,0 +1,223 @@
+/* 基本設定 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 導航欄樣式 */
+header {
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav h1 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+/* 各區塊共同樣式 */
+section {
+    margin-top: 60px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 40px 0;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* 介紹區塊 */
+#intro {
+    text-align: center;
+    padding-top: 100px;
+}
+
+#intro img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.title {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* 教育背景和工作經驗 */
+.education-item, .experience-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.experience-item ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+/* 技能區塊 */
+.skill-item {
+    margin-bottom: 20px;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 10px;
+    background: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 100%;
+    background: #007bff;
+    border-radius: 5px;
+}
+
+/* 項目區塊 */
+.project-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.project-item a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* 興趣愛好 */
+#hobbies ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* 聯絡表單 */
+form {
+    display: grid;
+    gap: 15px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* 社交連結 */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.social-links a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* 底部 */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    section {
+        margin-top: 40px;
+    }
+} 
